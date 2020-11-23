@@ -1,0 +1,98 @@
+/*
+Theme Name: VSMTI tema
+Author: VSMTI tim
+Description: VSMTI tema
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vsmti
+*/
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.flextable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.flextable table {
+    margin: 2rem 1rem;
+}
+
+#nastavnik_content {
+    font-size: .7rem;
+}
+
+#content {
+    width: 69%;
+}
+
+#sidebar {
+    width: 29%;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: block;
+    }
+
+    #sidebar {
+        width: 100%;
+        min-height: 0vh;
+    }
+
+    #content {
+        width: 100%;
+    }
+}
+
+#predmetContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+#predmetContent table {
+    border: 1px solid black;
+}
+
+#predmetContent table td {
+    border: 1px solid black;
+    padding: 1rem!important;
+
+}
+
+#predmetContent table tbody tr {
+
+}
+
+#predmetContent .tblOpisPredmeta {
+    margin: auto;
+}
+
+div.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
